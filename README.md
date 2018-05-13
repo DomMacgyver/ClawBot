@@ -1,2 +1,2 @@
 # ClawBot
-This robot used Meccano servos attached to an arduino with a bluetooth shield. The bluetooth shield would sink with my phone and transmit data to the servos so that they would mirror the orientation of my phone. This project include Meccano Servos, OneShield Bluetooth Shield, and the Arduino Uno.
+This robot used Meccano servos attached to an Arduino with a Bluetooth shield. The Bluetooth shield would sink with my phone and transmit data to the servos so that they would mirror the orientation of my phone. This project included <i>Meccano</i> servos, <i>OneShield</i> Bluetooth Shield, and the <i>Arduino</i> Uno.
