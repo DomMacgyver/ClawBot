@@ -17,16 +17,7 @@ MeccaBrain servo(5);
 
 void setup() {
 
-  /* String a = "0";
-
-      while (a!="1")
-      {
-
-      a = Serial.read();
-    Serial.print(5);
-    Serial.print(a);
-    delay(500);
-      }*/
+  
 
   delay(15000);
   OneSheeld.begin();
@@ -65,42 +56,7 @@ void loop() {
     servo.setServoPosition(2, map(z, 0, 180, 0x18, 0xE8));
 
     delay(15);
-    servo2.communicate();
-servo2.setServoPosition(0, map(0, 0, 180, 0x18, 0xE8));
-servo2.setServoPosition(1, map(180, 0, 180, 0x18, 0xE8));
-delay(15);
-servo3.communicate();
-servo3.setServoPosition(0, map(180, 0, 180, 0x18, 0xE8));
-servo3.setServoPosition(1, map(0, 0, 180, 0x18, 0xE8));
-delay(15);
-servo4.communicate();
-servo4.setServoPosition(0, map(180, 0, 180, 0x18, 0xE8));
-servo4.setServoPosition(1, map(0, 0, 180, 0x18, 0xE8));
-delay(15);
-
-servo.communicate();
-servo.setServoPosition(0, map(90, 0, 180, 0x18, 0xE8));
-servo.setServoPosition(1, map(90, 0, 180, 0x18, 0xE8));
-delay(15);
-servo2.communicate();
-servo2.setServoPosition(0, map(90, 0, 180, 0x18, 0xE8));
-servo2.setServoPosition(1, map(90, 0, 180, 0x18, 0xE8));
-delay(15);
-servo3.communicate();
-servo3.setServoPosition(0, map(90, 0, 180, 0x18, 0xE8));
-servo3.setServoPosition(1, map(90, 0, 180, 0x18, 0xE8));
-delay(15);
-servo4.communicate();
-servo4.setServoPosition(0, map(90, 0, 180, 0x18, 0xE8));
-servo4.setServoPosition(1, map(90, 0, 180, 0x18, 0xE8));
-delay(15);
-
-
-  
-
-
-
-
+    
 
 
 
