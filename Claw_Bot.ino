@@ -8,7 +8,7 @@
 
 
 #include "MeccaBrain.h"
-MeccaBrain servo(5);
+MeccaBrain servo(5);//servo data pin is connected to digital pin 5
   int x = 90;
   int y = 90;
   int z = 90;
@@ -33,12 +33,12 @@ void setup() {
 
 void loop() {
 
-
-
-    servo.communicate();
+    servo.communicate();//initiate servo communication
+  //get orientation dat from phone
     x = int(OrientationSensor.getX());
     y = int(OrientationSensor.getY());
     z = int(OrientationSensor.getZ());
+  //normalize the angles to work with servo limits
     if (x > 270)
     {
       x = 0;
@@ -50,23 +50,12 @@ void loop() {
     x = 180 - x;
     y = 180 + y;
     z = 180 - (z + 90);
-
+  
+  //set the servo position
     servo.setServoPosition(0, map(x, 0, 180, 0x18, 0xE8));
     servo.setServoPosition(1, map(y, 0, 180, 0x18, 0xE8));
     servo.setServoPosition(2, map(z, 0, 180, 0x18, 0xE8));
 
     delay(15);
-    
-
-
 
 }
-
-
-
-
-
-
-
-
-
